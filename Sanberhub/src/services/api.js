@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const ApiData = axios.create({
-    baseURL: "https://cms-admin-v2.ihsansolusi.co.id/",
+    baseURL: import.meta.env.VITE_API_URL,
 });
 
 export const SetAuthToken = (token) => {
